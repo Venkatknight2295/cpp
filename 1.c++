@@ -161,7 +161,12 @@
 //operator precedence
 /* refer the website for these*/
 
-
+#include<iostream>
+using namespace std;
+ int main(){
+    int age;
+    cout<<"tell "
+ }
 
 
 
