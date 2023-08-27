@@ -165,7 +165,8 @@
 using namespace std;
  int main(){
     int age;
-    cout<<"tell "
+    cout<<"tell 
+    "
  }
 
 
