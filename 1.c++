@@ -28,23 +28,23 @@
 // }
 
 // #4
-// #include <iostream>
-// using namespace std;
-// int glo=6;
-// void sum()
-// {
-//     int a;
-//     cout<<glo;
-// }
-// int main(){
-//     int glo=5;
-//     glo=78;
-//     int a=4;
-//     bool true_=false;
-//     sum();
-//     cout<<glo<<true_;
-//     return 0;
-// }
+#include <iostream>
+using namespace std;
+int glo=6;
+void sum()
+{
+    int a;
+    cout<<glo;
+}
+int main(){
+    int glo=5;
+    glo=78;
+    int a=4;
+    bool true_=true;
+    sum();
+    cout<<glo<<true_;
+    return 0;
+}
 
 // #5
 // #include<iostream>
@@ -161,6 +161,7 @@
 //operator precedence
 /* refer the website for these*/
 
+<<<<<<< Updated upstream
 //#include<iostream>
 //using namespace std;
 // int main(){
@@ -172,6 +173,15 @@
 
 #9
 
+=======
+// #include<iostream>
+// using namespace std;
+//  int main(){
+//     int age;
+//     cout<<"tell 
+//     "
+//  }
+>>>>>>> Stashed changes
 
 
 
