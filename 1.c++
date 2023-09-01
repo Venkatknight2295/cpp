@@ -161,13 +161,17 @@
 //operator precedence
 /* refer the website for these*/
 
-#include<iostream>
-using namespace std;
- int main(){
-    int age;
-    cout<<"tell 
-    "
- }
+//#include<iostream>
+//using namespace std;
+// int main(){
+//    int a=2,b=3;
+//    int c=((((a*5)+b)-45)+87);
+//   cout<<c;
+//    return o;
+// }
+
+#9
+
 
 
 
