@@ -28,23 +28,23 @@
 // }
 
 // #4
-#include <iostream>
-using namespace std;
-int glo=6;
-void sum()
-{
-    int a;
-    cout<<glo;
-}
-int main(){
-    int glo=5;
-    glo=78;
-    int a=4;
-    bool true_=true;
-    sum();
-    cout<<glo<<true_;
-    return 0;
-}
+// #include <iostream>
+// using namespace std;
+// int glo=6;
+// void sum()
+// {
+//     int a;
+//     cout<<glo;
+// }
+// int main(){
+//     int glo=5;
+//     glo=78;
+//     int a=4;
+//     bool true_=true;
+//     sum();
+//     cout<<glo<<true_;
+//     return 0;
+// }
 
 // #5
 // #include<iostream>
@@ -171,9 +171,7 @@ int main(){
 //    return o;
 // }
 
-#9
-
-=======
+//#9
 // #include<iostream>
 // using namespace std;
 //  int main(){
@@ -181,7 +179,7 @@ int main(){
 //     cout<<"tell 
 //     "
 //  }
->>>>>>> Stashed changes
+
 
 
 
