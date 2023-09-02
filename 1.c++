@@ -161,7 +161,7 @@
 //operator precedence
 /* refer the website for these*/
 
-<<<<<<< Updated upstream
+
 //#include<iostream>
 //using namespace std;
 // int main(){
@@ -174,11 +174,119 @@
 //#9
 // #include<iostream>
 // using namespace std;
-//  int main(){
+//  int main()
+//  {
 //     int age;
-//     cout<<"tell 
-//     "
+//     cout<<"enter your age"<<endl;
+//     cin>>age;
+//     if((age<18)&&(age>0)){
+//     cout<<"you are not allowed to the party"<<endl;
+//     }
+//     else if(age==18){
+//         cout<<"you are kid u will get kids pass"<<endl;
+//     }
+//     else if(age<1){
+//         cout<<"you are not yet born"<<endl;
+//         }
+//         else{
+//             cout<<"you are allowed to the party"<<endl;
+//         }
 //  }
+// switch case
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int age;
+//     cout<<"enter your age";
+//     cin>>age;
+//     switch(age){
+//         case 18:
+//             cout<<"your age is 18"<<endl;
+//             break;
+//           case 22:
+//             cout<<"your age is 22"<<endl;
+//             break;
+//             case 2:
+//             cout <<"grow up first"<<endl;
+
+//             default:
+//             cout<<"no special cases"<<endl;
+//             break;
+        
+//     }
+//     cout<<"done with switch case"<<endl;
+//     return 0;
+// }
+
+//10
+
+// #include <iostream>
+
+// using namespace std;
+// int main()
+// {
+    /*Loops in C++:
+    There are three types of loops in C++:
+        1. For loop
+        2. While Loop
+        3. do-While Loop
+    */
+
+    /*For loop in C++*/
+    // int i=1;
+    // cout<<i;
+    // i++;
+
+    // for (int i = 1; i <= 40; i++)
+    // {
+    //     /* code */
+    //     cout<<i<<endl;
+    // }
+
+    // Example of infinite for loop
+    // for (int i = 1; 34 <= 40; i++)
+    // {
+    //     /* code */
+    //     cout<<i<<endl;
+    // }
+
+    //  Printing 1 to 40 using while loop
+    // int i=1;
+    // while(i<=40){
+    //     cout<<i<<endl;
+    //     i++;
+    // }
+
+    // Example of infinite while loop
+    // int i = 1;
+    // while (true)
+    // {
+    //     cout << i << endl;
+    //     i++;
+    // }
+
+    /* do While loop in C++*/
+        // Syntax:
+        // do
+        // {
+        //     C++ statements;
+        // }while(condition);
+        
+    //  Printing 1 to 40 using do while loop
+    // int i=1;
+    // do{
+    //     cout<<i<<endl;
+    //     i++;
+    // }while(false);
+
+//     return 0;
+// }
+
+
+
+
+    
+ 
 
 
 
