@@ -371,68 +371,205 @@
 // }
 
 // #14
+// #include<iostream>
+// using namespace std;
+// int sum(int a, int b){
+//     int c=a+b;
+//     return c;  
+// }
+
+// int main(){
+//     int num1,num2;
+//     cout<<"enter first number"<<endl;
+//     cin>>num1;
+//     cout<<"enter second number"<<endl;
+//     cin>>num2;
+//     cout<<"the sum is"<<sum(num1,num2);
+//     return 0;
+// }
+// #14
+
+// #include<iostream>
+// using namespace std;
+
+// typedef struct employee
+// {
+//     /* data */
+//     int eId; //4
+//     char favChar; //1
+//     float salary; //4
+// } ep;
+
+// union money
+// {
+//     /* data */
+//     int rice; //4
+//     char car; //1
+//     float pounds; //4
+// };
+
+
+// int main(){
+//     enum Meal{ breakfast, lunch, dinner};
+//     Meal m1 = lunch;
+//     cout<<(m1==2);
+//     // cout<<breakfast;
+//     // cout<<lunch;
+//     // cout<<dinner; 
+//     // union money m1;
+//     // m1.rice = 34;
+//     // m1.car = 'c';
+//     // cout<<m1.car;
+
+//     // ep harry;
+//     // struct employee shubham;
+//     // struct employee rohanDas;
+//     // harry.eId = 1;
+//     // harry.favChar = 'c';
+//     // harry.salary = 120000000;
+//     // cout<<"The value is "<<harry.eId<<endl; 
+//     // cout<<"The value is "<<harry.favChar<<endl; 
+//     // cout<<"The value is "<<harry.salary<<endl; 
+//     return 0;
+// }
+
+// #15
+// #include<iostream>
+// using namespace std;
+
+// // Function prototype
+// // type function-name (arguments);
+// // int sum(int a, int b); //--> Acceptable
+// // int sum(int a, b); //--> Not Acceptable 
+// int sum(int, int); //--> Acceptable 
+// // void g(void); //--> Acceptable 
+// void g(); //--> Acceptable 
+
+// int main(){
+//     int num1, num2;
+//     cout<<"Enter first number"<<endl;
+//     cin>>num1;
+//     cout<<"Enter second number"<<endl;
+//     cin>>num2;
+//     // num1 and num2 are actual parameters
+//     cout<<"The sum is "<<sum(num1, num2);
+//     g();
+//     return 0;
+// }
+
+// int sum(int a, int b){
+//     // Formal Parameters a and b will be taking values from actual parameters num1 and num2.
+//     int c = a+b;
+//     return c;
+// }
+
+// void g(){
+//     cout<<"\nHello, Good Morning";
+// }
+
+// #16
+// #include<iostream>
+// using namespace std;
+
+// int sum(int a, int b){
+//     int c = a + b;
+//     return c;
+// }
+
+// // This will not swap a and b
+// void swap(int a, int b){ //temp a b
+//     int temp = a;        //4   4  5   
+//     a = b;               //4   5  5
+//     b = temp;            //4   5  4 
+// }
+
+// // Call by reference using pointers
+// void swapPointer(int* a, int* b){ //temp a b
+//     int temp = *a;          //4   4  5   
+//     *a = *b;               //4   5  5
+//     *b = temp;            //4   5  4 
+// }
+
+// // Call by reference using C++ reference Variables
+// // int & 
+// void swapReferenceVar(int &a, int &b){ //temp a b
+//     int temp = a;          //4   4  5   
+//     a = b;               //4   5  5
+//     b = temp;            //4   5  4 
+//     // return a;
+// }
+
+// int main()
+// {
+//     int x =4, y=5;
+//     // cout<<"The sum of 4 and 5 is "<<sum(a, b);
+//     cout<<"The value of x is "<<x<<" and the value of y is "<<y<<endl;
+//     // swap(x, y); // This will not swap a and b
+//     // swapPointer(&x, &y); //This will swap a and b using pointer reference
+//     swapReferenceVar(x, y); //This will swap a and b using reference variables
+//     // swapReferenceVar(x, y) = 766; //This will swap a and b using reference variables
+//     cout<<"The value of x is "<<x<<" and the value of y is "<<y<<endl; 
+//     return 0;
+// }
+
+// #17
+// #include<iostream>
+// using namespace std;
+// inline int product(int a,int b){
+//     return a*b;
+// }
+// float moneyReceived(int currentMoney, float factor=1.04){
+//     return currentMoney * factor;
+// }
+// int main(){
+//     // int a,b;
+//     // cout<<"enter the value of a and b"<<endl;
+//     // cin>>a>>b;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+//     // cout<<"the product of a and b is"<<product(a,b)<<endl;
+   
+
+// //    int money =10000;
+// //    cout<<"if you have"<<money<<"rs in your bank account, u will recieve"<<moneyReceived(money)<<endl;
+// //    cout<<"for vip if you have"<<money<<"rs in your bank account, you will recive"<<moneyReceived(money, 1.1)<<"rs after 1 year";
+
+//     return 0;
+    
+// }
+
+// #18
 #include<iostream>
 using namespace std;
-int sum(int a, int b){
-    int c=a+b;
-    return c;  
+// int factorial(int n){
+//     if(n<=1){
+//         return 1;
+//     }
+//     return n*factorial(n-1);
+// }
+int fib(int n){
+    if(n<2){
+        return 1;
+    }
+    return fib(n-2)+fib(n-1);
 }
-
 int main(){
-    int num1,num2;
-    cout<<"enter first number"<<endl;
-    cin>>num1;
-    cout<<"enter second number"<<endl;
-    cin>>num2;
-    cout<<"the sum is"<<sum(num1,num2);
+    // int a;
+    // cout<<"enter a number"<<endl;
+    // cin>>a;
+    // cout<<"the factorial of"<<a<<"is"<<factorial(a)<<endl;
+    int a;
+    cout<<"enter a number "<<endl;
+    cin>>a;
+    cout<<"the "
     return 0;
 }
-#14
-
-#include<iostream>
-using namespace std;
-
-typedef struct employee
-{
-    /* data */
-    int eId; //4
-    char favChar; //1
-    float salary; //4
-} ep;
-
-union money
-{
-    /* data */
-    int rice; //4
-    char car; //1
-    float pounds; //4
-};
 
 
-int main(){
-    enum Meal{ breakfast, lunch, dinner};
-    Meal m1 = lunch;
-    cout<<(m1==2);
-    // cout<<breakfast;
-    // cout<<lunch;
-    // cout<<dinner; 
-    // union money m1;
-    // m1.rice = 34;
-    // m1.car = 'c';
-    // cout<<m1.car;
-
-    // ep harry;
-    // struct employee shubham;
-    // struct employee rohanDas;
-    // harry.eId = 1;
-    // harry.favChar = 'c';
-    // harry.salary = 120000000;
-    // cout<<"The value is "<<harry.eId<<endl; 
-    // cout<<"The value is "<<harry.favChar<<endl; 
-    // cout<<"The value is "<<harry.salary<<endl; 
-    return 0;
-}
-       
 
 
 
